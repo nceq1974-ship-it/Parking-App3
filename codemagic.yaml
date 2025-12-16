@@ -4,11 +4,11 @@ workflows:
     environment:
       flutter: stable
     scripts:
-      - name: Ensure Flutter Web folder exists
+      - name: Create fresh Flutter Web project
         script: |
-          cd parking_app
-          flutter create .
-      - name: Get Flutter dependencies
+          flutter create parking_app
+          cp ~/main_backup.dart parking_app/lib/main.dart
+      - name: Get dependencies
         script: |
           cd parking_app
           flutter pub get
