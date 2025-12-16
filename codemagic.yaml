@@ -1,0 +1,22 @@
+workflows:
+  flutter_web_build:
+    name: Flutter Web Build
+    environment:
+      flutter: stable
+    scripts:
+      - name: Ensure Flutter Web folder exists
+        script: |
+          cd parking_app
+          flutter create .
+      - name: Get Flutter dependencies
+        script: |
+          cd parking_app
+          flutter pub get
+      - name: Build Flutter Web
+        script: |
+          cd parking_app
+          flutter build web --release
+    artifacts:
+      - parking_app/build/web
+    publishing:
+      web: true
