@@ -15,7 +15,7 @@ workflows:
       - name: Build Flutter Web
         script: |
           cd parking_app
-          flutter build web --release
+          flutter build web --release --web-renderer html
     artifacts:
       - parking_app/build/web
     publishing:
