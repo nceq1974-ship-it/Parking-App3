@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   final String backendUrl =
-      'https://REPLACE_WITH_YOUR_CODESPACE_ID-4000.preview.app.github.dev';
+      'https://bookish-chainsaw-5gjg745g9g9rf7wqj-4000.app.github.dev/';
 
   @override
   Widget build(BuildContext context) {
