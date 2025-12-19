@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   final String backendUrl =
-      'https://bookish-chainsaw-5gjg745g9g9rf7wqj-4000.app.github.dev/';
+      'https://parking-backend-p8ci.onrender.com';
 
   @override
   Widget build(BuildContext context) {
